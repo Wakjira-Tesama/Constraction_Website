@@ -1,0 +1,280 @@
+@@include('header.htm') @@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', {"title": "Project", "prevpage": "Project",
+"currentpage": "All Projects"})
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div
+          class="shuffle-btn-group"
+          style="display: flex; justify-content: center"
+        >
+          <label class="active" for="all">
+            <input
+              type="radio"
+              name="shuffle-filter"
+              id="all"
+              value="all"
+              checked="checked"
+            />Show All
+          </label>
+          <label for="commercial">
+            <input
+              type="radio"
+              name="shuffle-filter"
+              id="commercial"
+              value="commercial"
+            />Water
+          </label>
+          <label for="education">
+            <input
+              type="radio"
+              name="shuffle-filter"
+              id="education"
+              value="education"
+            />Irrigation
+          </label>
+          <label for="government">
+            <input
+              type="radio"
+              name="shuffle-filter"
+              id="government"
+              value="government"
+            />Road
+          </label>
+          <label for="infrastructure">
+            <input
+              type="radio"
+              name="shuffle-filter"
+              id="infrastructure"
+              value="infrastructure"
+            />Canal
+          </label>
+          <label for="residential">
+            <input
+              type="radio"
+              name="shuffle-filter"
+              id="residential"
+              value="residential"
+            />Drilling
+          </label>
+          <label for="healthcare">
+            <input
+              type="radio"
+              name="shuffle-filter"
+              id="healthcare"
+              value="healthcare"
+            />Building
+          </label>
+        </div>
+        <!-- project filter end -->
+
+        <div class="row shuffle-wrapper gx-4 gy-4">
+          <div class="col-1 shuffle-sizer"></div>
+
+          <div
+            class="col-lg-4 col-md-6 shuffle-item"
+            data-groups='["government","healthcare"]'
+          >
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project1.jpg">
+                <img
+                  class="img-fluid"
+                  src="images/projects/project1.jpg"
+                  alt="project-image"
+                  style="margin: 40px; max-width: 100%"
+                />
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="projectone.html"> TARE TOWN WSSH PROJECT </a>
+                  </h3>
+                  <p class="project-cat">Water, Building ,Road</p>
+                </div>
+              </div>
+            </div>
+            <p style="padding-left: 10px; padding-right: 10px">
+              Complete civil and electromechanical works pipelines, reservoir,
+              buildings, and boreholes.
+            </p>
+          </div>
+          <!-- shuffle item 1 end -->
+
+          <div
+            class="col-lg-4 col-md-6 shuffle-item"
+            data-groups='["healthcare"]'
+          >
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project2.jpg">
+                <img
+                  class="img-fluid"
+                  src="images/projects/project2.jpg"
+                  alt="project-image"
+                  style="margin: 40px; max-width: 100%"
+                />
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="project2.html"> AREKA TOWN WATER SUPPLY PROJECT</a>
+                  </h3>
+                  <p class="project-cat">Water, Building ,Road</p>
+                </div>
+              </div>
+            </div>
+            <p style="padding-left: 10px; padding-right: 10px">
+              Full civil, electromechanical, and utility construction for water
+              infrastructure and community facilities.
+            </p>
+          </div>
+          <!-- shuffle item 2 end -->
+
+          <div
+            class="col-lg-4 col-md-6 shuffle-item"
+            data-groups='["infrastructure","commercial"]'
+          >
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project3.jpg">
+                <img
+                  class="img-fluid"
+                  src="images/projects/project3.jpg"
+                  alt="project-image"
+                  style="margin: 40px; max-width: 100%"
+                />
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="project3.html"
+                      >Gimbi Site Center for Handicapped and OVC Children
+                      treatment project</a
+                    >
+                  </h3>
+                  <p class="project-cat">Water , Building,Road</p>
+                </div>
+              </div>
+            </div>
+            <p style="padding-left: 10px; padding-right: 10px">
+              Complete civil, electromechanical, and utility works pipe ,
+              reservoir, buildings, roads,
+            </p>
+          </div>
+          <!-- shuffle item 3 end -->
+
+          <div
+            class="col-lg-4 col-md-6 shuffle-item"
+            data-groups='["education","infrastructure"]'
+          >
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project4.jpg">
+                <img
+                  class="img-fluid"
+                  src="images/projects/project4.jpg"
+                  alt="project-image"
+                  style="margin: 40px; max-width: 100%"
+                />
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="project4.html"> Dalacho Water supply project</a>
+                  </h3>
+                  <p class="project-cat">Canal,Water,Road</p>
+                </div>
+              </div>
+            </div>
+            <p style="padding-left: 10px; padding-right: 10px">
+              Full infrastructure development reinforced concrete roads, water,
+              electromechanical , buildings, and underground electrical system.
+            </p>
+          </div>
+          <!-- shuffle item 4 end -->
+
+          <div
+            class="col-lg-4 col-md-6 shuffle-item"
+            data-groups='["infrastructure","education"]'
+          >
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project5.jpg">
+                <img
+                  class="img-fluid"
+                  src="images/projects/project5.jpg"
+                  alt="project-image"
+                  style="margin: 40px; max-width: 100%"
+                />
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="project5.html">
+                      CONSTRUCTION OF CATTLE REPRODUCTION AND DISTRIBUTION
+                      CENTER PROJECT
+                    </a>
+                  </h3>
+                  <p class="project-cat">Roads, Water, Buildings</p>
+                </div>
+              </div>
+            </div>
+            <p style="padding-left: 10px; padding-right: 10px">
+              Complete civil, electromechanical, and utility works roads, water
+              systems, buildings, and underground electricals.
+            </p>
+          </div>
+          <!-- shuffle item 5 end -->
+
+          <div
+            class="col-lg-4 col-md-6 shuffle-item"
+            data-groups='["residential"]'
+          >
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project6.jpg">
+                <img
+                  class="img-fluid"
+                  src="images/projects/project6.jpg"
+                  alt="project-image"
+                  style="margin: 40px; max-width: 100%"
+                />
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="project6.html"
+                      >ADEY ABEBA KEBELE WATER SUPPLY SANITATION AND HYGIENE
+                      PROJECT
+                    </a>
+                  </h3>
+                  <p class="project-cat">Buildings,Water</p>
+                </div>
+              </div>
+            </div>
+            <p style="padding-left: 10px; padding-right: 10px">
+              Supply & install pipes, build reservoir, EM works, water points,
+              generator & guard houses, and related civil infrastructure
+            </p>
+          </div>
+          <!-- shuffle item 6 end -->
+        </div>
+        <!-- shuffle end -->
+      </div>
+
+      <div class="col-12">
+        <div class="general-btn text-center">
+          <a class="btn btn-primary" href="projects.html">View All Projects</a>
+        </div>
+      </div>
+    </div>
+    <!-- Content row end -->
+  </div>
+  <!-- Conatiner end -->
+</section>
+<!-- Main container end -->
+
+@@include('footer.htm')
