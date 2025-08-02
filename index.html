@@ -1,0 +1,532 @@
+@@include('header.htm') @@include('blocks/navigation-1.htm')
+<style>
+  .banner-carousel-item {
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 6s ease-in-out;
+    animation: zoomSlide 10s ease-in-out infinite;
+  }
+
+  /* Zoom effect keyframes */
+  @keyframes zoomSlide {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 150%;
+      opacity: 1;
+    }
+  }
+</style>
+<div class="banner-carousel banner-carousel-1 mb-0">
+  <div
+    class="banner-carousel-item"
+    style="background-image: url(images/slider-main/bg1.jpg)"
+  >
+    <div class="slider-content">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-md-12 text-center">
+            <h2 class="slide-title" data-animation-in="slideInLeft">
+              11 Years of excellence in
+            </h2>
+            <h3 class="slide-sub-title" data-animation-in="slideInRight">
+              Construction Industry
+            </h3>
+            <p data-animation-in="slideInLeft" data-duration-in="1.2">
+              <a href="services.html" class="slider btn btn-primary"
+                >Our Services</a
+              >
+              <a href="contact.html" class="slider btn btn-primary border"
+                >Contact Now</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="banner-carousel-item"
+    style="background-image: url(images/slider-main/bg2.jpg)"
+  >
+    <div class="slider-content text-left">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-md-12">
+            <h2 class="slide-title-box" data-animation-in="slideInDown">
+              World Class Service
+            </h2>
+            <h3 class="slide-title" data-animation-in="fadeIn">
+              When Service Matters
+            </h3>
+            <h3 class="slide-sub-title" data-animation-in="slideInLeft">
+              Your Choice is Simple
+            </h3>
+            <p data-animation-in="slideInRight">
+              <a href="services.html" class="slider btn btn-primary border"
+                >Our Services</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="banner-carousel-item"
+    style="background-image: url(images/slider-main/bg3.jpg)"
+  >
+    <div class="slider-content text-right">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-md-12">
+            <h2 class="slide-title" data-animation-in="slideInDown">
+              Meet Our Engineers
+            </h2>
+            <h3 class="slide-sub-title" data-animation-in="fadeIn">
+              We believe sustainability
+            </h3>
+            <p class="slider-description lead" data-animation-in="slideInRight">
+              We will deal with your failure that determines how you achieve
+              success.
+            </p>
+            <div data-animation-in="slideInLeft">
+              <a
+                href="contact.html"
+                class="slider btn btn-primary"
+                aria-label="contact-with-us"
+                >Get Free Quote</a
+              >
+              <a
+                href="about.html"
+                class="slider btn btn-primary border"
+                aria-label="learn-more-about-us"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .call-to-action-box .call-to-action-text {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+  }
+
+  .call-to-action-box .call-to-action-text h3 {
+    white-space: nowrap;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    animation: marquee 20s linear infinite;
+  }
+
+  .call-to-action-box .call-to-action-text h3::after {
+    content: attr(data-text);
+    padding-left: 100px; /* space between text and duplicate */
+  }
+
+  .call-to-action-box .call-to-action-text h3 span {
+    margin-right: 50px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .call-to-action-box .call-to-action-text h3:hover {
+    animation-play-state: paused;
+  }
+  .action-title span {
+    position: relative;
+    padding-left: 25px; /* bakka mallattoo */
+    margin-right: 50px;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    font-size: 21px;
+  }
+
+  /* Mallattoo garaa garaa: pseudo element before */
+  .action-title span:nth-child(1)::before {
+    content: "🔥"; /* Fire emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: pulse 2s infinite;
+  }
+
+  .action-title span:nth-child(2)::before {
+    content: "⭐"; /* Star emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: bounce 2s infinite;
+  }
+
+  .action-title span:nth-child(3)::before {
+    content: "🚧"; /* Construction emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: shake 2s infinite;
+  }
+
+  .action-title span:nth-child(4)::before {
+    content: "💧"; /* Water drop emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: pulse 3s infinite;
+  }
+
+  .action-title span:nth-child(5)::before {
+    content: "🌿"; /* Leaf emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: bounce 3s infinite;
+  }
+
+  .action-title span:nth-child(6)::before {
+    content: "🏗️"; /* Building emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: shake 3s infinite;
+  }
+
+  .action-title span:nth-child(7)::before {
+    content: "🌉"; /* Bridge emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: pulse 2.5s infinite;
+  }
+
+  .action-title span:nth-child(8)::before {
+    content: "⛏️"; /* Pickaxe emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: bounce 2.5s infinite;
+  }
+
+  .action-title span:nth-child(9)::before {
+    content: "🏆"; /* Trophy emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: shake 2.5s infinite;
+  }
+
+  .action-title span:nth-child(10)::before {
+    content: "📞"; /* Telephone emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: pulse 1.5s infinite;
+  }
+
+  .action-title span:nth-child(11)::before {
+    content: "📱"; /* Mobile emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: bounce 1.5s infinite;
+  }
+
+  /* Animation Keyframes */
+
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+  }
+</style>
+<section class="call-to-action-box no-padding" style="background: transparent">
+  <div class="container">
+    <div
+      class="action-style-box"
+      style="display: flex; height: 50px; align-items: center"
+    >
+      <div class="row align-items-center">
+        <div class="col-md-8 text-center text-md-left" style="width: 1200px">
+          <div class="call-to-action-text">
+            <h3
+              class="action-title"
+              data-text="We Understand Your Needs on Construction We Excel In Road Infrastructure Construction 
+              Water Works Construction Irrigation Building Construction Bridges & Canal Construction Drilling 
+              Services Your Trusted Builder — HKB Construction PLC Talk to Us +251-118-66-70-75"
+              style="text-transform: none; font-size: 21px; font-weight: bolder"
+            >
+              <span>We Understand Your Needs on Construction</span>
+              <span>We Excel In</span>
+              <span>Road Infrastructure Construction</span>
+              <span>Water Works Construction</span>
+              <span>Irrigation</span>
+              <span>Building Construction</span>
+              <span>Bridges & Canal Construction</span>
+              <span>Drilling Services</span>
+              <span>Your Trusted Builder — HKB Construction PLC</span>
+              <span>Talk to Us</span>
+              <span>+251-118-66-70-75</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Action end -->
+
+<section id="ts-features" class="ts-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="ts-intro">
+          <h2 class="into-title">About Us</h2>
+          <h3 class="into-sub-title">We deliver signature works</h3>
+          <p>
+            HKB Construction PLC, founded in 2014 by three industry
+            professionals, is a private construction company. With an initial
+            capital of 5,394,000 ETB based in Addis Ababa. The founders brought
+            years of experience in contracting and subcontracting before
+            establishing the company. With nationwide branches, HKB delivers
+            trusted infrastructure solutions across Ethiopia.
+          </p>
+        </div>
+        <!-- Intro box end -->
+
+        <div class="gap-20"></div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-trophy"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">We've Repution for Excellence</h3>
+              </div>
+            </div>
+            <!-- Service 1 end -->
+          </div>
+          <!-- col end -->
+
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-sliders-h"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">We Build Partnerships</h3>
+              </div>
+            </div>
+            <!-- Service 2 end -->
+          </div>
+          <!-- col end -->
+        </div>
+        <!-- Content row 1 end -->
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-thumbs-up"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">Guided by Commitment</h3>
+              </div>
+            </div>
+            <!-- Service 1 end -->
+          </div>
+          <!-- col end -->
+
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-users"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">A Team of Professionals</h3>
+              </div>
+            </div>
+            <!-- Service 2 end -->
+          </div>
+          <!-- col end -->
+        </div>
+        <!-- Content row 1 end -->
+      </div>
+      <!-- Col end -->
+
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <h3 class="into-sub-title">Our Values</h3>
+        <p>
+          We are driven by a Shared Vision and uphold the highest standards of
+          Professionalism and Integrity. With a deep Sense of Ownership, we
+          foster Teamwork and ensure Accountability in everything we do.
+        </p>
+
+        <div class="accordion accordion-group" id="our-values-accordion">
+          <div class="card">
+            <div class="card-header p-0 bg-transparent" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Customer Service
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#our-values-accordion"
+            >
+              <div class="card-body">
+                We deliver specialized and high-quality services across a broad
+                range of infrastructure sectors. Our expertise includes road and
+                bridge construction, water supply and sewerage systems,
+                irrigation development, building construction, canal and culvert
+                works, and well drilling. From modern roads, railways, and
+                airfields to hydropower dams, canals, and residential or
+                commercial buildings, we offer innovative, reliable, and
+                sustainable solutions tailored to meet the diverse needs of our
+                clients. With a strong focus on excellence, advanced technology,
+                and timely delivery, we are committed to exceeding customer
+                expectations in every project we undertake
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header p-0 bg-transparent" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Mission
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#our-values-accordion"
+            >
+              <div class="card-body">
+                To execute high-quality construction projects in water supply,
+                irrigation, dams, water well drilling, transport infrastructure,
+                and buildings by leveraging skilled manpower, modern technology,
+                and timely provision of construction materials—aiming to exceed
+                customer satisfaction while enhancing the capacity and
+                efficiency of HKB CONSTRUCTION PLC.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header p-0 bg-transparent" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Vision
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#our-values-accordion"
+            >
+              <div class="card-body">
+                We strive to be recognized as a top construction company in
+                Ethiopia and a prominent, reliable partner in Africa by 2035
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ Accordion end -->
+      </div>
+      <!-- Col end -->
+    </div>
+    <!-- Row end -->
+  </div>
+  <!-- Container end -->
+</section>
+<!-- Feature are end -->
+
+@@include('blocks/facts-counter.htm') @@include('blocks/services-1.htm')
+@@include('blocks/projects.htm') @@include('blocks/testomonial-n-clients.htm')
+@@include('blocks/newsletter.htm') @@include('blocks/news.htm')
+@@include('footer.htm')
